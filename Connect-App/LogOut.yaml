@@ -1,0 +1,21 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- startRecording: Logout
+
+- assertVisible:
+    id: "com.dgvconnect:id/drawer_btn"
+
+- tapOn:
+   id: "com.dgvconnect:id/drawer_btn" 
+   
+- assertVisible:
+   text: "Logout"
+
+- tapOn:
+    text: "Logout"   
+    
+- stopRecording

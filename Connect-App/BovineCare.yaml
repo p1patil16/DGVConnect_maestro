@@ -1,0 +1,16 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible:
+   id: "com.dgvconnect:id/bovine_care_layout"
+
+- tapOn:
+   id: "com.dgvconnect:id/bovine_care_layout"
+
+- assertVisible:
+    id: "com.dgvconnect:id/bovine_textview"
+
+- back

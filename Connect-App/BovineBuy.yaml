@@ -1,0 +1,132 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible:
+    id: "com.dgvconnect:id/buy_now_linear_lyt"
+    
+- tapOn:
+   id: "com.dgvconnect:id/buy_now_linear_lyt"
+   
+- assertVisible:  
+    text: "Buy"   
+   
+- tapOn:
+   id: "com.dgvconnect:id/best_seller_switch"
+   
+- assertVisible:  
+    text: "Filter"
+    
+- tapOn:    
+    text: "Filter"
+    
+- assertVisible:  
+    text: "Best Seller"
+
+- assertVisible:  
+    text: "Looking for"
+
+- assertVisible:  
+    id: "com.dgvconnect:id/rb_nddb_dairy"
+
+- assertVisible:  
+    text: "Cow"
+    
+- tapOn:  
+    id: "com.dgvconnect:id/rb_nddb_dairy"
+
+- tapOn:  
+   text: "Cow"  
+   
+- scrollUntilVisible:
+    element: "Apply" 
+    direction: DOWN   
+    
+- tapOn:
+   text: "Apply"
+   
+- assertVisible:  
+    text: "Filter"
+    
+- tapOn:    
+    text: "Filter"
+    
+- assertVisible:  
+    id: "com.dgvconnect:id/rb_dgv_recommended"
+
+- assertVisible:  
+   text: "Cross Breed Cow"
+
+- tapOn:  
+   id: "com.dgvconnect:id/rb_dgv_recommended"
+
+- tapOn:  
+   text: "Cross Breed Cow"
+
+- scrollUntilVisible:
+    element: "Apply" 
+    direction: DOWN   
+
+- tapOn:
+    text: "Apply"
+   
+- assertVisible:  
+    text: "Filter"
+    
+- tapOn:    
+    text: "Filter"
+    
+- assertVisible:  
+    id: "com.dgvconnect:id/rb_all"
+
+- assertVisible:  
+   text: "Buffalo"
+   
+- tapOn:  
+   id: "com.dgvconnect:id/rb_all"
+
+- tapOn:  
+   text: "Buffalo"
+
+- scrollUntilVisible:
+    element: "Apply" 
+    direction: DOWN   
+
+- tapOn:
+   text: "Apply"
+
+- assertVisible:  
+   text: "Price"
+   
+- tapOn:  
+   text: "Price"
+
+- assertVisible:  
+   id: "com.dgvconnect:id/qr_code_btn"
+   
+- tapOn:  
+   id: "com.dgvconnect:id/qr_code_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/favorite_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/favorite_btn"
+
+- assertVisible:  
+    id: "com.dgvconnect:id/share_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/share_btn"
+
+- back
+
+- back
+
+- back
+
+

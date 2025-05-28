@@ -1,0 +1,93 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible: 
+    id: "com.dgvconnect:id/myAccountFragment"
+
+- tapOn: "com.dgvconnect:id/myAccountFragment"
+
+- assertVisible: 
+    text: "Sell  "
+
+- tapOn: "Sell  "
+
+- assertVisible: 
+    text: "My Payments"
+
+- tapOn: "My Payments"
+
+- assertVisible: 
+    text: "My Payments"
+
+- assertVisible: 
+    text: "To Pay:"
+
+- back
+
+- assertVisible: 
+    text: "Drafts"
+
+- tapOn: "Drafts"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_reassigned"
+
+- tapOn: "com.dgvconnect:id/lb_reassigned"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_all"
+
+- tapOn: "com.dgvconnect:id/lb_all"
+
+- back
+
+- assertVisible: 
+    text: "Live Listings"
+
+- tapOn: "Live Listings"
+
+- assertVisible: 
+    text: "Live"
+
+- tapOn: "Live" 
+
+- assertVisible: 
+    id: "com.dgvconnect:id/qr_code_btn"
+
+- tapOn: "com.dgvconnect:id/qr_code_btn"
+
+- back
+
+- assertVisible: 
+    id: "com.dgvconnect:id/share_btn"
+
+- tapOn: "com.dgvconnect:id/share_btn"
+
+- back
+
+- assertVisible: 
+    text: "close"
+
+- tapOn: "close"
+
+- back
+
+- assertVisible: 
+    text: "Pending Approvals"
+
+- tapOn: "Pending Approvals"
+
+- assertVisible: 
+    text: "Sale Deed"
+
+- tapOn: "Sale Deed"
+
+- back
+
+- assertVisible:
+   id: "com.dgvconnect:id/homeFragment"
+
+- tapOn: "com.dgvconnect:id/homeFragment"

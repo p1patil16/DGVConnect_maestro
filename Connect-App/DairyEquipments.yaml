@@ -1,0 +1,103 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible:
+   id: "com.dgvconnect:id/layout"
+    
+- tapOn:
+   id: "com.dgvconnect:id/layout"
+   
+- assertVisible:
+   text: "Filter"
+    
+- tapOn:
+   text: "Filter"  
+ 
+- assertVisible:
+   text: "Looking for Brands"
+
+- assertVisible:
+   text: "MSD"
+
+- tapOn:
+    text: "MSD" 
+
+- scrollUntilVisible:
+    element: "Search" 
+    direction: DOWN 
+    
+- tapOn:
+    text: "Search"      
+
+- assertVisible:
+   text: "Price"
+
+- tapOn:
+    text: "Price"
+    
+- assertVisible:  
+   id: "com.dgvconnect:id/qr_code_btn"
+   
+- tapOn:  
+   id: "com.dgvconnect:id/qr_code_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/favorite_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/favorite_btn"
+
+- assertVisible:  
+    id: "com.dgvconnect:id/share_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/share_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/btn_buy_now"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/btn_buy_now"
+
+- assertVisible:  
+   id: "com.dgvconnect:id/thank_you_msg"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/thank_you_msg"
+    
+- assertVisible:
+    text: "Close"    
+
+- tapOn: 
+    text: "Close"
+    
+- assertVisible:  
+   id: "com.dgvconnect:id/add_to_cart_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/add_to_cart_btn"
+
+- assertVisible:  
+   id: "com.dgvconnect:id/thank_you_msg"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/thank_you_msg"
+    
+- assertVisible:
+    text: "Close"    
+
+- tapOn: 
+    text: "Close"
+ 
+- back
+
+- back 
+
+

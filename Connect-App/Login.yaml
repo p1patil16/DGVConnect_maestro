@@ -1,0 +1,123 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+- launchApp
+
+- startRecording: Login
+
+- assertVisible:
+     text: "Dgv logo onboarding"
+    
+- assertVisible:
+     text: "Select Your Language"
+   
+- assertVisible:
+     text: "Select"
+   
+- assertVisible:
+     id: "com.dgvconnect:id/button_continue"
+
+- tapOn: 
+     text: "Select"
+     
+- assertVisible:   
+    text: "English"
+
+- assertVisible:   
+    text: "हिंदी"
+
+- assertVisible:   
+    text: "తెలుగు"
+
+- assertVisible:   
+    text: "ગુજરાતી"
+
+- assertVisible:   
+    text: "ಕನ್ನಡ"
+   
+- tapOn:
+    text: "English"   
+
+- tapOn:
+   text: "Continue"   
+   
+- assertVisible:
+    id: "com.dgvconnect:id/text_onboarding"
+    
+- assertVisible:
+   id: "com.dgvconnect:id/animationView"
+   
+- assertVisible:
+    text: "Skip"
+    
+- assertVisible:
+    text: "Next"
+    
+- assertVisible:
+    text: "Previous"
+    
+- tapOn:
+   text: "Skip"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/login_animation"
+    
+- assertVisible:
+    id: "com.dgvconnect:id/tv_login_title"
+
+- assertVisible:  
+    text: "Login or SignUp"
+
+    
+- assertVisible: 
+    text: "Mobile Number"
+    
+- assertVisible:  
+    text: "Enter Your Mobile Number"
+
+- tapOn:
+    text: "Enter Your Mobile Number"
+    
+- inputText: "1234567890"
+
+- assertVisible:
+    id: "com.dgvconnect:id/button_login_continue" 
+
+- tapOn:
+    id: "com.dgvconnect:id/button_login_continue"
+
+- eraseText
+
+- inputText:
+    text: "8888095971"   
+
+- tapOn:
+    id: "com.dgvconnect:id/button_login_continue"
+
+- assertVisible:
+   id: "com.dgvconnect:id/tv_otp_verification"
+
+- assertVisible:
+   id : "com.dgvconnect:id/btn_verify"
+
+- tapOn:
+   id : "com.dgvconnect:id/otpET1"
+
+- inputText: "111111"
+ 
+- tapOn:
+   id : "com.dgvconnect:id/btn_verify"
+   
+- eraseText
+
+- tapOn:
+   id : "com.dgvconnect:id/otpET1"
+     
+- inputText: "121231"
+ 
+- tapOn:
+   id : "com.dgvconnect:id/btn_verify"
+
+- stopRecording

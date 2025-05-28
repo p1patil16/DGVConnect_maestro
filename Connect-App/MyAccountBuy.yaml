@@ -1,0 +1,130 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible: 
+    id: "com.dgvconnect:id/myAccountFragment"
+
+- tapOn: "com.dgvconnect:id/myAccountFragment"
+
+
+- assertVisible: 
+    text: "Purchases"
+
+- tapOn: "Purchases"
+
+- assertVisible: 
+    text: "Orders"
+
+- tapOn: "Orders"
+
+- assertVisible: 
+    text: "Returns"
+
+- tapOn: "Returns"
+
+- assertVisible: 
+    text: "Replacements"
+
+- tapOn: "Replacements"
+
+- assertVisible: 
+    text: "Cancelled"
+
+- tapOn: "Cancelled"
+
+- assertVisible: 
+    text: "All"
+
+- tapOn: "All"
+
+- back
+
+- assertVisible: 
+    text: "Payments"
+
+- tapOn: "Payments"
+
+- assertVisible: 
+    text: "Completed"
+
+- tapOn: "Completed"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/btn_arrow"
+
+- tapOn: "com.dgvconnect:id/btn_arrow"
+
+- tapOn: "com.dgvconnect:id/btn_arrow"
+
+- assertVisible: 
+    text: "All"
+
+- tapOn: "All"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/btn_arrow"
+
+- tapOn: "com.dgvconnect:id/btn_arrow"
+
+- tapOn: "com.dgvconnect:id/btn_arrow"
+
+- back
+
+- assertVisible: 
+    text: "Tracking"
+
+- tapOn: "Tracking"
+
+- back
+
+- assertVisible: 
+    text: "Wishlist"
+
+- tapOn: "Wishlist"
+
+- back
+
+- assertVisible: 
+    text: "Contacted Sellers"
+
+- tapOn: "Contacted Sellers"
+
+- assertvisible: 
+   text: "Contacted"
+
+- tapOn: "Contacted"
+
+- assertvisible: 
+   text: "Sold"
+
+- tapOn: "Sold"
+
+- assertvisible: 
+   text: "All"
+
+- tapOn: "All"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/btn_delete"
+
+- tapOn: "com.dgvconnect:id/btn_delete"
+
+- back
+
+- assertVisible: 
+    text: "Invoice Details"
+
+- tapOn: "Invoice Details"
+
+- back
+
+- assertVisible: 
+    text: "Health Certificate"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/homeFragment"
+
+- tapOn: "com.dgvconnect:id/homeFragment"

@@ -1,0 +1,292 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible:
+   id: "com.dgvconnect:id/layout"
+    
+- tapOn:
+   id: "com.dgvconnect:id/layout"
+   
+- assertVisible:
+   text: "Filter"
+    
+- tapOn:
+   text: "Filter"  
+ 
+- assertVisible:
+   text: "Looking for Brands"
+
+- assertVisible:
+   text: "Mayuresh Technologies Private Limited"
+
+- tapOn:
+    text: "Mayuresh Technologies Private Limited" 
+
+- scrollUntilVisible:
+    element: "Search" 
+    direction: DOWN 
+    
+- tapOn:
+   text: "Search"      
+
+- assertVisible:
+   text: "Price"
+
+- tapOn:
+    text: "Price"
+    
+- assertVisible:  
+   id: "com.dgvconnect:id/qr_code_btn"
+   
+- tapOn:  
+   id: "com.dgvconnect:id/qr_code_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/favorite_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/favorite_btn"
+
+- assertVisible:  
+    id: "com.dgvconnect:id/share_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/share_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/add_to_cart_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/add_to_cart_btn"
+
+- assertVisible:  
+   id: "com.dgvconnect:id/btn_buy_now"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/btn_buy_now"
+
+- assertVisible:
+   id: "com.dgvconnect:id/plus_btn"
+
+- tapOn: "com.dgvconnect:id/plus_btn"
+
+- assertVisible:
+   id: "com.dgvconnect:id/minus_btn"
+
+- tapOn: "com.dgvconnect:id/minus_btn"
+
+- assertVisible: 
+   text: "Add another item?"
+
+- tapOn: "Add another item?"
+
+- assertVisible: 
+   text: "Filter"
+
+- tapOn: "Filter"
+
+- assertVisible: 
+   text: "Delaval Private Limited"
+
+- tapOn: "Delaval Private Limited"
+
+- scrollUntilVisible:
+    element: "Search" 
+    direction: DOWN 
+    
+- tapOn:
+   text: "Search"      
+
+- assertVisible:
+   text: "Price"
+
+- tapOn:
+    text: "Price"
+    
+- assertVisible:  
+   id: "com.dgvconnect:id/qr_code_btn"
+   
+- tapOn:  
+   id: "com.dgvconnect:id/qr_code_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/favorite_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/favorite_btn"
+
+- assertVisible:  
+    id: "com.dgvconnect:id/share_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/share_btn"
+
+- back
+
+- assertVisible:  
+   id: "com.dgvconnect:id/add_to_cart_btn"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/add_to_cart_btn"
+
+- assertVisible:  
+   id: "com.dgvconnect:id/btn_buy_now"
+   
+- tapOn:  
+    id: "com.dgvconnect:id/btn_buy_now"
+
+- assertVisible:  
+   id: "com.dgvconnect:id/total_amount"
+ 
+- assertVisible: 
+    text: "Proceed to Buy" 
+    
+- tapOn: 
+    text: "Proceed to Buy"     
+
+- assertVisible: 
+    text: "Do you want to buy Equipment with ?" 
+
+- assertVisible: 
+    text: "Loan" 
+
+- assertVisible: 
+    text: "Digital Payments"     
+ 
+- assertVisible: 
+    text: "Enter your Details"      
+
+- assertVisible: 
+    text: "Contact Number"  
+
+- assertVisible: 
+    text: "Name *"
+    
+- assertVisible: 
+    text: "Enter Your Name"   
+
+- tapOn: 
+   text: "Enter Your Name"   
+   
+- inputText: "supriya"
+
+- hideKeyboard
+
+- scrollUntilVisible:
+    element: "Submit" 
+    direction: DOWN 
+    
+- assertVisible: 
+   text: "Submit"
+   
+- tapOn:
+    text: "Submit"
+
+- assertVisible: 
+   text: "Shipping Address"
+
+- assertVisible:
+   id: "com.dgvconnect:id/edit_shipping_address_btn"
+
+- tapOn: "com.dgvconnect:id/edit_shipping_address_btn"
+
+- scrollUntilVisible:
+    element: "Update" 
+    direction: DOWN 
+
+-assertVisible: 
+   text: "Alternate Mobile Number"
+
+- tapOn: "com.dgvconnect:id/edt_alternate_number"
+
+- inputText: "8888095971"
+
+- tapOn: "Update"
+
+- assertVisible: 
+    text: "Proceed to Pay" 
+    
+- tapOn: 
+    text: "Proceed to Pay"     
+
+- assertVisible: 
+    text: "Bill Summary"
+
+- assertVisible: 
+    text: "Description"
+
+- assertVisible: 
+    text: "Qty"
+
+- assertVisible: 
+    text: "Amount ₹"
+
+- scrollUntilVisible:
+    element: "Proceed to Buy" 
+    direction: DOWN  
+    
+- assertVisible: 
+    text: "Shipping Address"     
+    
+- assertVisible: 
+    text: "Proceed to Buy" 
+ 
+- tapOn:
+   text: "Proceed to Buy" 
+   
+- extendedWaitUntil:
+    visible: "Congratulations!" 
+    timeout: 40000 
+    
+- assertVisible: 
+    text: "Congratulations!"   
+    
+- assertVisible: 
+    text: "Your order has been placed" 
+    
+- assertVisible: 
+    text: "Order Summary" 
+
+- assertVisible: 
+    text: "Item ID"
+
+- assertVisible: 
+    text: "Description" 
+
+- scrollUntilVisible:
+    element: "Home" 
+    direction: DOWN 
+    
+- assertVisible: 
+    text: "Address" 
+    
+- assertVisible: 
+    text: "Tentative Delivery Period"     
+
+- assertVisible: 
+    text: "Invoice will be sent through SMS"
+    
+- assertVisible: 
+    text: "Home" 
+    
+- tapOn:
+   text: "Home"
+
+
+
+
+
+
+
+
+
+

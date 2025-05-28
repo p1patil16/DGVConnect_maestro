@@ -1,0 +1,516 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+- assertVisible:
+   id: "com.dgvconnect:id/buy_now_linear_lyt"
+   
+- tapOn:
+   id: "com.dgvconnect:id/buy_now_linear_lyt"
+   
+- tapOn:
+   id: "com.dgvconnect:id/lb_sell"
+
+- assertVisible:
+   text: "Do you want to list the bovine as?"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/radio_self_btn"
+
+- assertVisible:
+   id: "com.dgvconnect:id/radio_others_btn"
+
+- assertVisible:
+   text: "Do you want to initiate DBI?"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/radio_dbi_yes_btn"
+   
+- assertVisible:   
+   id: "com.dgvconnect:id/radio_dbi_no_btn"
+
+- assertVisible:
+   text: "Is the Bovine(s) tagged?"
+
+- assertVisible:
+   id: "com.dgvconnect:id/radio_tagged_yes_btn"
+
+- assertVisible:
+   id: "com.dgvconnect:id/radio_tagged_no_btn"
+   
+- assertVisible:
+   text: "Continue"
+   
+- tapOn:
+   text: "Continue" 
+   
+- assertVisible:  
+   text: "Owner Details - Self"
+   
+- assertVisible:
+   text: "Mobile Number *"
+   
+- assertVisible:   
+   text: "Name *"
+   
+- assertVisible:   
+   text: "Address *"
+   
+- assertVisible:   
+   text: "Pincode *"
+
+- assertVisible:
+   id: "com.dgvconnect:id/btn_fetch_pincode_data"
+  
+- tapOn:
+   id: "com.dgvconnect:id/btn_fetch_pincode_data"  
+   
+- scrollUntilVisible:
+    element: "Continue" 
+    direction: DOWN
+   
+- assertVisible:   
+   text: "Landmark *"
+   
+- assertVisible:
+   text: "Village *"
+   
+- assertVisible:   
+   text: "Taluka *"
+   
+- assertVisible:   
+   text: "District *"
+
+- assertVisible:   
+   text: "State *"
+   
+- assertVisible:
+   text: "Initiate Geo Tagging"
+
+- tapOn:
+   text: "Initiate Geo Tagging"
+ 
+- assertVisible:
+   text: "Continue"
+   
+- tapOn:
+   text: "Continue"  
+   
+- assertVisible:
+    text: "Bovine Details"
+   
+- assertVisible:   
+   id: "com.dgvconnect:id/lb_category"
+   
+- tapOn:
+   text: "Select"
+ 
+- assertVisible:  
+   text: "Buffalo"
+
+- assertVisible:  
+   text: "Cow"
+
+- assertVisible:  
+   text: "Cross Breed Cow"
+   
+- tapOn:
+    text: "Buffalo"  
+  
+- assertVisible: 
+   text: "Breed *"
+   
+- assertVisible: 
+   text: "Select"
+   
+- tapOn:
+    text: "Select"  
+    
+- assertVisible: 
+   text: "Banni"
+   
+- assertVisible: 
+   text: "Bhadawari"
+   
+- assertVisible: 
+   text: "Jaffrabadi"
+
+- tapOn:
+   text: "Banni" 
+ 
+- assertVisible: 
+   text: "Gender"
+  
+- assertVisible: 
+   text: "Select"
+
+- tapOn:
+    text: "Select"
+    
+- assertVisible: 
+   text: "Female"
+   
+- tapOn:
+    text: "Female"
+    
+- assertVisible: 
+   text: "Bovine Tag Number *"
+   
+- tapOn:
+   text: "Enter Bovine Tag number"
+  
+- inputText: "12345678"
+
+- hideKeyboard 
+
+- assertVisible: 
+    text: "Age *"
+   
+- assertVisible:
+   text: "Year"
+
+- tapOn: "Year"
+
+- assertVisible: 
+   text: "1"
+
+- assertVisible: 
+   text: "2"
+
+- assertVisible: 
+   text: "3"
+
+- tapOn: "2"
+
+- assertVisible: 
+   text: "Month"
+
+- tapOn: "Month"
+
+- assertVisible: 
+   text: "0"
+
+- assertVisible: 
+   text: "1"
+
+- assertVisible: 
+   text: "2"
+
+- tapOn: "2"
+
+- assertVisible: 
+   text: "Price"
+   
+- assertVisible: 
+   text: "Enter amount"
+   
+- tapOn:
+   text: "Enter amount"
+   
+- inputText: "50000"  
+
+- hideKeyboard
+
+- scrollUntilVisible:
+    element: "Date of Last Calving *" 
+    direction: DOWN
+
+- assertVisible: 
+   text: "Lactation *"
+   
+- assertVisible: 
+   text: "Select"
+   
+- tapOn:
+   text: "Select"
+   
+- assertVisible: 
+   text: "Virgin"
+
+- assertVisible: 
+   text: "1st Lactation"
+   
+- assertVisible: 
+   text: "2nd Lactation"  
+
+- tapOn: 
+   text: "1st Lactation"
+
+- assertVisible: 
+   text: "Milk Yield (in Litres/Day) *"
+   
+- tapOn: 
+   text: "Enter Milk yield"
+   
+- inputText: "6" 
+
+- hideKeyboard  
+   
+- assertVisible: 
+   text: "Peak Milk Yield (in Litres/Day) *"
+   
+- tapOn: 
+   text: "Enter Peak Milk yield"   
+
+- inputText: "7" 
+
+- hideKeyboard 
+
+- assertVisible: 
+   text: "Average Milk Fat Percentage *"
+   
+- assertVisible: 
+   text: "Select"
+
+- tapOn: 
+   text: "Select"   
+   
+- assertVisible: 
+   text: "1%-2%"
+   
+- assertVisible: 
+   text: "2.1%-3%"
+   
+- assertVisible: 
+   text: "3.1%-4%"
+   
+- tapOn:
+    text: "1%-2%"   
+   
+- assertVisible: 
+   text: "Weight (in Kgs) *"
+   
+- assertVisible: 
+   text: "Enter weight"
+   
+- tapOn: 
+   text: "Enter weight" 
+ 
+- inputText: "700"    
+
+- hideKeyboard 
+
+- scrollUntilVisible:
+    element: "Shape of horn (Left)" 
+    direction: DOWN
+
+- assertVisible: 
+   text: "Date of Last Calving *"
+   
+- assertVisible: 
+   text: "Year"
+   
+- tapOn:
+   text: "Year"
+   
+- assertVisible: 
+   text: "2020"
+   
+- tapOn:
+   text: "2020"      
+   
+- assertVisible: 
+   text: "Month"
+   
+- tapOn:
+   text: "Month"  
+
+- assertVisible: 
+   text: "Jan"
+
+- assertVisible: 
+   text: "Feb"
+
+- assertVisible: 
+   text: "Mar"
+   
+- tapOn:
+   text: "Feb"    
+ 
+- assertVisible: 
+   text: "Is the Bovine Pregnant?"
+   
+- assertVisible: 
+   id: "com.dgvconnect:id/pregnant_yes"
+   
+- assertVisible: 
+   id: "com.dgvconnect:id/pregnant_no"  
+   
+- assertVisible: 
+   text: "Pregnant(in Months)"
+
+- assertVisible: 
+   text: "Select"
+ 
+- tapOn:
+   text: "Select" 
+  
+- assertVisible: 
+   text: "1st Month"
+
+- assertVisible: 
+   text: "3rd Month"
+   
+- tapOn:
+   text: "1st Month"   
+
+- assertVisible: 
+   text: "Do you list calf along with Bovine?"
+   
+- assertVisible: 
+   id: "com.dgvconnect:id/calf_yes"
+
+- assertVisible: 
+   id: "com.dgvconnect:id/calf_no"
+   
+- assertVisible: 
+   text: "Body Colour" 
+   
+- assertVisible: 
+   text: "Select"
+   
+- tapOn:
+   text: "Select"  
+   
+- assertVisible: 
+   text: "Black"   
+
+- assertVisible: 
+   text: "White Black"
+   
+- tapOn: 
+   text: "Black"   
+
+- assertVisible: 
+   text: "Bovine Identification Mark *"
+   
+- tapOn:   
+   text: "Enter Bovine Identification Mark"
+   
+- tapOn:
+   text: "Enter Bovine Identification Mark"   
+  
+- inputText: "White mark on forehead" 
+
+- hideKeyboard 
+
+- assertVisible: 
+   text: "Shape of horn (Left)" 
+   
+- assertVisible: 
+   text: "Select"
+   
+- tapOn:
+   text: "Select"
+   
+- assertVisible: 
+   text: "No horn"   
+
+- assertVisible: 
+   text: "Short"
+   
+- tapOn: 
+   text: "Short"   
+
+- scrollUntilVisible:
+    element: "Continue" 
+    direction: DOWN    
+
+- assertVisible: 
+   text: "Shape of horn (Right)" 
+   
+- assertVisible: 
+   text: "Select"
+ 
+- tapOn:
+   text: "Select"
+   
+- assertVisible: 
+   text: "No horn"   
+
+- assertVisible: 
+   text: "Short"
+   
+- tapOn: 
+   text: "Short"   
+
+- assertVisible: 
+   text: "Switch of Tail" 
+      
+- assertVisible: 
+   text: "Select"
+   
+- tapOn:
+   text: "Select"   
+   
+- assertVisible: 
+   text: "Black"   
+
+- assertVisible: 
+   text: "White Black"
+   
+- tapOn: 
+   text: "Black"   
+
+- assertVisible: 
+   text: "Is cattle shed address same as owner’s?"
+
+- assertVisible: 
+   id: "com.dgvconnect:id/shed_address_yes"
+   
+- assertVisible: 
+   id: "com.dgvconnect:id/shed_address_no"   
+
+- assertVisible: 
+   id: "com.dgvconnect:id/description_continue_btn"
+
+- assertVisible:
+   text: "Continue"
+   
+- tapOn:
+   text: "Continue"    
+
+- assertVisible: 
+   text: "Capture Images"
+
+- assertVisible: 
+   id: "com.dgvconnect:id/btn_camera"
+   
+- assertVisible:    
+   text: "Start Live Streaming"
+   
+- assertVisible:    
+   text: "Muzzle"
+   
+- assertVisible:    
+   text: "Front View"   
+
+- assertVisible:    
+   text: "Right View"  
+ 
+- assertVisible:    
+   text: "Rear"  
+   
+- assertVisible:    
+   text: "Udder" 
+   
+- scrollUntilVisible:
+    element: "Submit" 
+    direction: DOWN    
+   
+- assertVisible:    
+   text: "Eyes"     
+
+- assertVisible:    
+   text: "Identification Mark"
+   
+- assertVisible:    
+   text: "Tag Number"   
+   
+- assertVisible:    
+   text: "Calf"    
+   
+- assertVisible:    
+   text: "Submit"       
+   

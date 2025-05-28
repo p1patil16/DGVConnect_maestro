@@ -1,0 +1,35 @@
+appId: com.dgvconnect
+tags:
+  - android
+  - passing
+---
+
+- assertVisible:
+   text: "What we offer"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/buy_now_linear_lyt"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/layout"
+
+- assertVisible:
+    id: "com.dgvconnect:id/hc_linear_lyt"
+
+- assertVisible:
+   id: "com.dgvconnect:id/bovine_care_layout"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/call_center_btn"
+   
+- assertVisible:
+   id: "com.dgvconnect:id/drawer_btn" 
+   
+- assertVisible:   
+   text: "Bovine Care"
+
+- assertVisible:
+   text: "Services"
+
+- assertVisible:
+   text: "My Account"
