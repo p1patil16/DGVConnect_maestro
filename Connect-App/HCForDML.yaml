@@ -4,154 +4,141 @@ tags:
   - passing
 ---
 
-- assertVisible:
+- assertVisible: 
     id: "com.dgvconnect:id/hc_linear_lyt"
-    
-- tapOn:
-   id: "com.dgvconnect:id/hc_linear_lyt"
-    
-- assertVisible:    
-   text: "Do you want to register for?"
 
-- assertVisible:    
-   text: "Others"
-   
 - tapOn: 
-   text: "Others"
-   
-- assertVisible: 
-   text: "Do you want to do?"
+    id: "com.dgvconnect:id/hc_linear_lyt"
 
 - assertVisible: 
-   text: "New Listing"
-
-- assertVisible:
-   text: "Re- Listing"
+    id: "com.dgvconnect:id/lb_txt"
 
 - assertVisible: 
-   text: "Owner Details - Others"
+    id: "com.dgvconnect:id/lead_code_txt"
 
 - assertVisible: 
-   text: "Mobile Number *"
+    text: "Enter DML Lead Code"
 
-- assertVisible: 
-   text: "Mobile Number"
-   
-- tapOn:
-   text: "Mobile Number"   
-
-- inputText: "9876543210"
+- inputText: "KTK05051438503716"
 
 - hideKeyboard
 
 - assertVisible: 
-   text: "Send OTP"
-   
-- tapOn:
-   text: "Send OTP"
+    text: "Do you want to register for?"
 
 - assertVisible: 
-   text: "OTP"
+    text: "Self"
 
 - assertVisible: 
-   text: "Enter OTP"
-   
+    text: "Others"
+
+- tapOn: 
+    text: "Others"
+
+- assertVisible: 
+    text: "Do you want to do?"
+
+- assertVisible: 
+    text: "New Listing"
+
+- assertVisible: 
+    text: "Mobile Number *"
+
+- assertVisible: 
+    text: "Mobile Number"
+
+- inputText: "7710919061"
+
+- hideKeyboard
+
+- assertVisible: 
+    text: "Send OTP"
+
+- tapOn: 
+    text: "Send OTP"
+
+- assertVisible: 
+    text: "OTP"
+
+- assertVisible: 
+    text: "Enter OTP"
+
 - tapOn:
-   text: "Enter OTP"
- 
+    text: "Enter OTP"
+
 - inputText: "121231"
 
-- assertVisible: 
-   text: "Verify"
-   
-- tapOn:
-    text: "Verify" 
+- hideKeyboard
 
-- scrollUntilVisible:
-    element: "Taluka *" 
-    direction: DOWN 
+- assertVisible: 
+    text: "Verify"
+
+- tapOn:
+    text: "Verify"
+
+- assertVisible: 
+    text: "Re- Listing"
+
+- tapOn: 
+    text: "Re- Listing"
+
+- assertVisible: 
+    text: "Bovine ID *"
+
+- tapOn: 
+    text: "Self"
+
+- assertVisible: 
+    text: "Submit"
+
+- tapOn: 
+    text: "Submit"
 
 - assertVisible: 
    text: "Name *"
-   
-- tapOn:
-   text: "Enter Your Name" 
-
-- inputText: "supriya"
-
-- hideKeyboard
 
 - assertVisible: 
    text: "Address *"
-   
-- tapOn:
-    text: "Address"
-    
-- inputText: "qwertyuioplkjhv"
 
-- hideKeyboard    
-    
 - assertVisible: 
    text: "Pincode *"
-   
-- tapOn:
-   text: "Enter pincode" 
-
-- inputText: "411004"
-
-- hideKeyboard
 
 - assertVisible:
    id: "com.dgvconnect:id/btn_fetch_pincode_data"
   
 - tapOn:
-   id: "com.dgvconnect:id/btn_fetch_pincode_data"  
+   id: "com.dgvconnect:id/btn_fetch_pincode_data" 
+
+- scrollUntilVisible:
+    text: "Continue" 
+    direction: DOWN 
 
 - assertVisible: 
    text: "Landmark *"
-   
-- tapOn:
-   text: "Enter Landmark" 
-    
-- inputText: "Landmark"
 
-- hideKeyboard
-   
 - assertVisible: 
    text: "Village *"
-   
-- tapOn:
-   text: "Village name" 
-    
-- inputText: "Village"
 
-- hideKeyboard
-
-- scrollUntilVisible:
-    element: "Continue" 
-    direction: DOWN 
-  
 - assertVisible: 
    text: "Taluka *"
-   
-- tapOn:
-   text: "Enter Taluka" 
-    
-- inputText: "Taluka"
-
-- hideKeyboard    
 
 - assertVisible: 
    text: "District *"
-   
+
 - assertVisible: 
    text: "State *"
 
-- assertVisible:
-   text: "Continue"
-   
+- assertVisible: 
+   text: "Initiate Geo Tagging"
+
 - tapOn:
-   text: "Continue" 
+   text: "Initiate Geo Tagging"
+
+- assertVisible: 
+   text: "Continue"
+
+- tapOn:
+   text: "Continue"
 
 - assertVisible:
     text: "Bovine Details"
@@ -234,7 +221,7 @@ tags:
 - hideKeyboard
 
 - scrollUntilVisible:
-    element: "Date of Last Calving *" 
+    text: "Date of Last Calving *" 
     direction: DOWN
 
 - assertVisible: 
@@ -356,7 +343,7 @@ tags:
    id: "com.dgvconnect:id/pregnant_no"  
    
 - scrollUntilVisible:
-    element: "Shape of horn (Left) *" 
+    text: "Shape of horn (Left) *" 
     direction: DOWN
 
 - assertVisible: 
@@ -409,7 +396,7 @@ tags:
    text: "Short"   
 
 - scrollUntilVisible:
-    element: "Continue" 
+    text: "Continue" 
     direction: DOWN    
 
 - assertVisible: 
@@ -501,3 +488,5 @@ tags:
    
 - tapOn: 
    text: "Submit"
+
+

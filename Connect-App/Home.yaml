@@ -3,21 +3,52 @@ tags:
   - android
   - passing
 ---
-
 - assertVisible:
    text: "What we offer"
    
 - assertVisible:
    id: "com.dgvconnect:id/buy_now_linear_lyt"
+
+- tapOn:
+   id: "com.dgvconnect:id/buy_now_linear_lyt"
+
+- back
    
 - assertVisible:
    id: "com.dgvconnect:id/layout"
 
+- tapOn:
+   id: "com.dgvconnect:id/layout"
+
+- back
+
 - assertVisible:
     id: "com.dgvconnect:id/hc_linear_lyt"
 
+- tapOn: 
+    id: "com.dgvconnect:id/hc_linear_lyt"
+
+- back
+
+- assertVisible:
+   id: "com.dgvconnect:id/feed_supplements_layout"
+
+- tapOn:
+   id: "com.dgvconnect:id/feed_supplements_layout"
+
+- back
+
+- scrollUntilVisible:
+    element: "Bovine Care"
+    direction: DOWN
+
 - assertVisible:
    id: "com.dgvconnect:id/bovine_care_layout"
+
+- tapOn: 
+   id: "com.dgvconnect:id/bovine_care_layout"
+
+- back
    
 - assertVisible:
    id: "com.dgvconnect:id/call_center_btn"

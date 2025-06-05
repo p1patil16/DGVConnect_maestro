@@ -60,44 +60,148 @@ tags:
 
 - back
 
+- assertVisible: 
+    text: "Add to Cart"
+
+- tapOn: 
+    text: "Add to Cart"
+
 - assertVisible:  
    id: "com.dgvconnect:id/btn_buy_now"
    
 - tapOn:  
     id: "com.dgvconnect:id/btn_buy_now"
 
-- assertVisible:  
-   id: "com.dgvconnect:id/thank_you_msg"
-   
-- tapOn:  
-    id: "com.dgvconnect:id/thank_you_msg"
-    
-- assertVisible:
-    text: "Close"    
+- assertVisible: 
+    id: "com.dgvconnect:id/proceed_to_buy_btn"
 
 - tapOn: 
-    text: "Close"
-    
-- assertVisible:  
-   id: "com.dgvconnect:id/add_to_cart_btn"
-   
-- tapOn:  
-    id: "com.dgvconnect:id/add_to_cart_btn"
-
-- assertVisible:  
-   id: "com.dgvconnect:id/thank_you_msg"
-   
-- tapOn:  
-    id: "com.dgvconnect:id/thank_you_msg"
+    id: "com.dgvconnect:id/proceed_to_buy_btn"
     
 - assertVisible:
-    text: "Close"    
+    text: "Enter your Details"    
+
+- assertVisible: 
+    id: "com.dgvconnect:id/bovine_listing_for_txt"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/loan"
+
+- tapOn:
+    id: "com.dgvconnect:id/loan"
+
+- assertVisible: 
+    id: "Digital Payment"
 
 - tapOn: 
-    text: "Close"
- 
-- back
+    text: "Digital Payment"
 
-- back 
+- assertVisible: 
+    text: "Contact Number"
 
+- scrollUntilVisible:
+    element: "Submit"
+    direction: DOWN
 
+- assertVisible: 
+    text: "Submit"
+
+- tapOn:
+    text: "Submit"
+
+- assertVisible: 
+    text: "Name *"
+
+- tapOn: 
+    text: "Enter Your Name"
+
+- inputText: "Pavan Patil"
+
+- hideKeyboard
+
+- assertVisible: 
+    text: "Submit"
+
+- tapOn:
+    text: "Submit"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_shipping_address"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/edit_shipping_address_btn"
+
+- tapOn: 
+    id: "com.dgvconnect:id/edit_shipping_address_btn"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_select_address"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_name"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_room_no"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_landmark"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_village"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_taluka"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_district"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_state"
+
+- scrollUntilVisible:
+    element: "Update" 
+    direction: DOWN 
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_pin_code"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_alternate_number"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/update_btn"
+
+- tapOn: 
+    id: "com.dgvconnect:id/update_btn"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/lb_shipping_address"
+
+- assertVisible: 
+    id: "com.dgvconnect:id/proceed_to_pay_btn"
+
+- tapOn: 
+    id: "com.dgvconnect:id/proceed_to_pay_btn"
+
+- assertVisible: 
+    text: "Bill Summary"
+
+- assertVisible: 
+    text: "Description"
+
+- assertVisible: 
+    text: "Qty"
+
+- assertVisible: 
+    text: "Amount ₹"
+
+- assertVisible: 
+    text: "Shipping Address"
+
+- assertVisible: 
+    text: "Proceed to Pay"
+
+- repeat:
+    times: 6
+    commands: 
+      - tapOn: back
